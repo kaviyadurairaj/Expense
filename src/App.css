@@ -140,3 +140,36 @@ body {
     margin-top: 10px;
   }
 }
+.auth-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #4e7cad;
+}
+
+.signup-button {
+  background-color: #536fa3;
+}
+
+.login-button:hover {
+  background-color: #2a4b6e;
+}
+
+.signup-button:hover {
+  background-color: #2a4b6e;
+}
+
