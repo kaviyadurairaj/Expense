@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/ExpenseForm.css"
+import "../css/ExpenseForm.css";
 
 const ExpenseForm = ({ addExpense, members }) => {
   const [desc, setDesc] = useState("");

@@ -40,12 +40,103 @@
 .read-the-docs {
   color: #888;
 }*/
-.app {
-  text-align: center;
-  background: #f8f9fa;
-  padding: 20px;
+/* General App Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./images/background.jpg') ;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  color: #333;
 }
 
-h1 {
-  color: #e567a0;
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(102, 152, 213);
+  color: rgb(255, 255, 255);
+  padding: 20px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px; /* Rounded for a neat look */
+}
+
+.app-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: rgba(50, 17, 30, 0.2);
+  text-decoration: none;
+}
+
+/* Main Content - Ensuring Space Below Header */
+.container {
+  margin-top: 100px; /* Adjust based on header height */
+  padding: 20px;
+ 
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome h2 {
+  color: #1a1c74;
+}
+
+.welcome p {
+  font-size: 1.2em;
+  color: #201b1b;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
 }

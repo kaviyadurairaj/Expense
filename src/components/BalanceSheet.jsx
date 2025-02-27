@@ -1,4 +1,4 @@
-import "../css/BalanceSheet.css"
+import "../css/BalanceSheet.css";
 
 const BalanceSheet = ({ expenses, members }) => {
   const balances = members.reduce((acc, member) => {
@@ -29,5 +29,3 @@ const BalanceSheet = ({ expenses, members }) => {
 };
 
 export default BalanceSheet;
-
-  

@@ -1,4 +1,4 @@
-import "../css/ExpenseList.css"
+import "../css/ExpenseList.css";
 
 const ExpenseList = ({ expenses }) => {
   return (
@@ -16,5 +16,3 @@ const ExpenseList = ({ expenses }) => {
 };
 
 export default ExpenseList;
-
-  
